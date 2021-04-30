@@ -13,7 +13,7 @@ function criaElemento(event) {
   const conteudo = `
     <img class = "indicacao__imagem" src="${arrayIndicacoes[event].imagem}"></img>
     <p class = "indicacao__p">${arrayIndicacoes[event].texto}</p>
-    <button class = "indicacao__botao--ler"><a href="${arrayIndicacoes[event].endereco}">Ler</a></button>
+    <a href="${arrayIndicacoes[event].endereco}"><button class = "indicacao__botao--ler">Ler</button></a>
     <button class = "indicacao__botao--voltar">Voltar</button>
     `;
   // Atribuindo os filhos e anexando no elemento pai main

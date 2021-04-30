@@ -109,6 +109,10 @@ height: 100%;
   border-radius: 15px;
 }
 
+.indicacao__a {
+  width: 100%;
+}
+
 .rodape {
   color: white;
   display: flex;

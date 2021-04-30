@@ -1,0 +1,121 @@
+/* Uso de metodologia BEM, além de Flexbox e Grid */
+
+body {
+background: rgb(157,2,8);
+background: linear-gradient(180deg, rgba(157,2,8,1) 0%, rgba(106,4,15,1) 50%, rgba(55,6,23,1) 100%);
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin: 0;
+height: 100%;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em auto 0;
+  width: 30em;
+  border-radius: 20px;
+  padding: 1em;
+  background: #03071E;
+  font-family: 'Lora', serif;
+}
+
+.logo {
+  fill: white;
+}
+
+.principal__cabecalho__titulo {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 1em 0;
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+.principal__escolhas__titulo{
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  color: white;
+  text-align: center;
+}
+
+.principal__escolhas__botoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.principal__escolhas__botao:hover, .indicacao__botao--ler:hover, .indicacao__botao--voltar:hover {
+  cursor: pointer;
+  background: #D00000;
+  color: white;
+  transition: .3s;
+}
+
+.principal__escolhas__botao:active,.indicacao__botao--ler:active, .indicacao__botao--voltar:active {
+  background: #6A040F;
+}
+
+.principal__escolhas__botao {
+  padding: .5em;
+  font-family: 'Lora', serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  background: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.escondido {
+  display: none;
+}
+
+.indicacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30em;
+  padding: 1em;
+  font-family: 'Lora', serif;
+}
+
+.indicacao__imagem {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.indicacao__p {
+  margin: 1em;
+  color: white;
+  font-size: 1.1em;
+  white-space: pre-wrap;
+}
+
+.indicacao__botao--ler, .indicacao__botao--voltar {
+  padding: .3em;
+  font-family: 'Lora', serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: .5em;
+  width: 100%;
+  background: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.rodape {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
